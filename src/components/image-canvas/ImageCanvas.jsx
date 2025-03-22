@@ -115,7 +115,7 @@ const ImageCanvas = ({ image }) => {
           {popup.visible && (
             <div
               className={styles.commentPopup}
-              style={{ left: `${popup.x}%`, top: `${popup.y}%` }}
+              style={{ left: `calc(${popup.x}% + 101px)`, top: `calc(${popup.y}% + 120px)` }}
             >
               <textarea
                 value={popup.text}
@@ -141,8 +141,8 @@ const ImageCanvas = ({ image }) => {
             <div
               className={styles.commentPopup}
               style={{
-                left: `calc(${replyData.x}% + 117px)`,
-                top: `calc(${replyData.y}% + 172px)`,
+                left: `calc(${replyData.x}% + 111px)`,
+                top: `calc(${replyData.y}% + 162px)`,
               }}
             >
               <textarea

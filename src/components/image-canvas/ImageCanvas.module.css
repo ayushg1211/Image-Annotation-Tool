@@ -2,17 +2,11 @@
     position: relative !important; 
     display: flex;
     width: 100%;
-    overflow: auto;
+    /* overflow: auto; */
     flex-direction: row-reverse;
     justify-content: center;
     align-items: start;
     /* margin-top: 20px; */
-}
-
-.image {
-    max-width: 100%;
-    border: 2px solid #ddd;
-    border-radius: 5px;
 }
 
 .imageCont{
@@ -20,8 +14,14 @@
     width: fit-content;
     display: flex;
     align-items: start;
+    /* overflow-x: auto; */
 }
 
+.image {
+    max-width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
 .marker {
     position: absolute;
     background-color: red;
